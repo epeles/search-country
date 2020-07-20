@@ -14,7 +14,7 @@ const home = (req, res) => {
         else { //if url == '/' and POST
             req.on('data', postBody => { //extract the 'text' typed by the user. In that case, it's an IncomingMessage object
                 let query = querystring.parse(postBody.toString()); //since data is a buffer (or stream), it needs to be converted to a string in order to be readable. The querystring parses the querystring and returns an object (i.e.: 'cep=22290030' will return '22290030'). More info at https://www.w3schools.com/nodejs/ref_querystring.asp
-                res.writeHead(303, {'Location': '/' + query.cep}); //redirect the page to the /'text' informed 
+                res.writeHead(303, {'Location': '/' + query.country}); //redirect the page to the /'text' informed 
                 res.end();
             });
         }    

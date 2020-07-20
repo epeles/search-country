@@ -4,7 +4,7 @@ const http = require("http");
 const util = require("util");
 
 /**
- * An EventEmitter to get a country details.
+ * An EventEmitter to get a country details
  * @param country
  * @constructor
  */
