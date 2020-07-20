@@ -1,3 +1,2 @@
 # search-country
--- npm install
--- node app
+ node app
